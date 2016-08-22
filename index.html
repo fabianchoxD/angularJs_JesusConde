@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>¡Hola Angular 2!</title>
+	<script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+	<script src="node_modules/systemjs/dist/system.js"></script>
+	<script src="node_modules/rxjs/bundles/Rx.js"></script>
+
+	<script src="systemjs.config.js"></script>
+	<script>
+		System.import ('built/timer')
+		.then(null, console.error.bind(console));
+	</script>
+
+</head>
+<body>
+	<!--Este es nuestro elemento personalizado-->
+	<timer></timer>	
+</body>
+</html>

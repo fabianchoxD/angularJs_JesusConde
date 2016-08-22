@@ -1,0 +1,46 @@
+{
+  "name": "angularjs2_jesusconde",
+  "version": "1.0.0",
+  "description": "curso angujar js",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "rm -rf ./built",
+    "postinstall": "npm run typing install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "prestart": "tsc",
+    "start": "concurrently \"npm run tsc:w \" \"npm run lite\" ",
+    "typings": "typings"
+  },
+  "author": "Fabian S. Varon",
+  "license": "ISC",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabianchoxD/angularJs_JesusConde.git"
+  },
+
+  "dependencies": {
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/http": "^2.0.0-rc.5",
+    "@angular/platform-browser": "^2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
+    "@angular/router": "^3.0.0-rc.1",
+    "@angular/router-deprecated": "^2.0.0-rc.2",
+    "bootstrap": "^3.3.7",
+    "es6-shim": "^0.35.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-beta.11",
+    "systemjs": "^0.19.37",
+    "zone.js": "^0.6.15"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.2",
+    "typescript": "1.8.10",
+    "typings": "1.3.2"
+  }
+}
